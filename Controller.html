@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AngularJS Binding</title>
+    <script type="text/javascript" src="angular.min.js"></script>
+	 <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body>
+    <div ng-app='app'>
+	
+     <div ng-controller='MainCtrl'>
+	 {{msg}}
+	  <form ng-submit="updateMessage(newMessage)">
+    <input type="text" ng-model="newMessage">
+    <button type="submit">Update Message</button>
+  </form>
+	 {{msg}}
+	 </div>
+    </div>
+  </body>
+</html>
