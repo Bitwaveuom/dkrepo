@@ -19,7 +19,7 @@ angular.module('app').controller('PostCtrl', function (messages){
    self.newMessage = 'Hello World!';
 
   self.addMessage = function(message){
-  if(message!='')
+  if(message!='' || message=='hello'){
     messages.add(message);
     self.newMessage = '';
   };
